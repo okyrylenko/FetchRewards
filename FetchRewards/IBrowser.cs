@@ -1,11 +1,10 @@
 using System;
-namespace FetchRewards
-    {
-    public interface IBrowser
-        {
+namespace FetchRewards    {
+    /// <summary>
+    /// Interface for a Browser window
+    /// </summary>
+    public interface IBrowser        {
         public T NavigateTo<T>(string url) where T : IBasePage;
         public string GetAlertText();
         public IBrowser MaximzeWindow();
-        void KillBrowser();
-        }
-    }
+        void KillBrowser();        }    }
