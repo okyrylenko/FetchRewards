@@ -1,6 +1,12 @@
-﻿using System;
+using System;
 
-namespace FetchRewards    {
-    class Program        {
-        static void Main(string[] args)            {
-            Console.WriteLine("Hello World!");            }        }    }
+namespace FetchRewards
+    {
+    class Program
+        {
+        static void Main(string[] args)
+            {
+            Console.WriteLine("Hello World!");
+            }
+        }
+    }
