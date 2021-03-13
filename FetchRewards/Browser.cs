@@ -1,8 +1,6 @@
 using System;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-
-namespace FetchRewards
+using OpenQA.Selenium.Support.UI;namespace FetchRewards
     {
     public class Browser : IBrowser
         {

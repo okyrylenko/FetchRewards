@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-
-namespace FetchRewards
+using OpenQA.Selenium;using OpenQA.Selenium.Support.UI;namespace FetchRewards
     {
     public sealed class HomePage : BasePage
         {
@@ -26,31 +23,14 @@ namespace FetchRewards
             {
             IList<int> leftPartition = new List<int>();
             IList<int> rightPartition = new List<int>();
-            IList<int> bars = GetCoins().Select(c => Int32.Parse(GetElementText(c))).ToList();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /*
+            IList<int> bars = GetCoins().Select(c => Int32.Parse(GetElementText(c))).ToList();            /*
              * The approach I took to solve this problem is a binary search of  devide a concur 
              * 1. I will split 9 numbers in 2 halves of 4 and compare them. If they equal, then the 9th number is a fake bar. 
              * 2. If one of them is smaller then the other, I will take the smaller and repeat step 1, only devide into 2 halves of 2 each. 
              * 3. Repeat untill I get to 2 numbers and compare them 
              * 
              * Note: this approach the best case scenario would be f(1), and the worst is f(log base 2 of n). If I take linear approach the best case would be f(1) and the worst is f(n)
-             */
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                while (true)
+             */                            while (true)
                 {
                 //asigning left halv to left parition
                 leftPartition = AssignList(bars, 0, bars.Count / 2);
